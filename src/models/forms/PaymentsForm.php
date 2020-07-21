@@ -9,10 +9,8 @@ use ellera\commerce\klarna\gateways\Hosted;
 use ellera\commerce\klarna\klarna\order\Create as CreateOrder;
 use ellera\commerce\klarna\klarna\session\Create;
 use ellera\commerce\klarna\models\responses\OrderResponse;
-use yii\base\InvalidConfigException;
-use GuzzleHttp\Exception\ClientException;
 
-class HostedForm extends BaseSessionForm
+class PaymentsForm extends BaseSessionForm
 {
     /**
      * @param Transaction $transaction
